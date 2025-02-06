@@ -16,7 +16,8 @@ body {
     background-color: #E5E6E7;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
+    
 }
 .grid-container {
     display: grid;
@@ -348,6 +349,19 @@ body {
     .cuerpo .formulario .largo {
         width: 95%;
     }
+    
+    .menu-pie { 
+        height: 1.6rem;
+    }
+    .menu-pie .redes li {
+        padding: 0.5em;
+    }
+    .menu-pie .logo{
+        height: 1.5em ;
+    }
+    .menu-pie .link li {
+        padding: 0.5em;
+    }
 }
 @media (max-width: 480px){
     .grid-container {
@@ -406,5 +420,18 @@ body {
     }
     .cuerpo .formulario .largo {
         width: 95%;
+    }
+
+    .menu-pie { 
+        height: 1.5rem;
+    }
+    .menu-pie .redes li {
+        padding: 0.5em;
+    }
+    .menu-pie .logo{
+        height: 1.5em ;
+    }
+    .menu-pie .link li {
+        padding: 0.5em;
     }
 }
