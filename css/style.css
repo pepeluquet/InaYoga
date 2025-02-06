@@ -8,7 +8,7 @@ box-model
     margin: 0;
     padding: 0;
     font-family: "Noto Sans", serif;
-    font-size: 20px;
+    box-sizing: border-box
 }
 
 
@@ -308,10 +308,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.2fr 1fr 0.5fr 0.04fr;
         grid-template-areas: 
-        "cabeza cabeza "
-        "cuerpo cuerpo"
-        "cuerpo cuerpo"
-        " pie   pie  "   
+        "cabeza cabeza  "
+        "cuerpo cuerpo "
+        "cuerpo cuerpo "
+        " pie    pie   "   
         ;
     }
     .cuerpo .articulos-lectura {
