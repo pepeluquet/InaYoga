@@ -208,13 +208,13 @@ body {
 }
 
 .cuerpo .formulario .comun {
-    width: 28%;
+    width: 20em;
 }
 .cuerpo .formulario .email {
-    width: 28%;
+    width: 30em;
 }
 .cuerpo .formulario .largo {
-    width: 95%;
+    width: 50em;
 }
 
 .pie {
@@ -299,13 +299,13 @@ body {
         padding: 0.8em;
         font-size: 1em; 
     }
-    .cabeza .titulo-info h3 {
-        padding: 0.8em;
-        font-size: 1em;  
-    }
-    .cabeza .titulo-blog h3 {
-        padding: 0.8em;
-        font-size: 1em;  
+
+    .cuerpo .subtitulos {
+        color: #2A2A24;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 1.8em;
+        font-size: 1em;
     }
     .cuerpo .articulos-lectura .articulo {
         width: 80%;
@@ -315,13 +315,13 @@ body {
     }
 
     .cuerpo .formulario .comun {
-        width: 40%;
+        width: 40em;
     }
     .cuerpo .formulario .email {
-        width: 95%;
+        width: 40em;
     }
     .cuerpo .formulario .largo {
-        width: 95%;
+        width: 40em;
     }
     
     .menu-pie { 
@@ -341,13 +341,20 @@ body {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 0.5fr 0.02fr;
+        grid-template-rows: 0.2fr 1fr 0.1fr 0.02fr;
         grid-template-areas: 
         "cabeza "
         "cuerpo "
         "cuerpo "
         " pie   "   
         ;
+    }
+    .cuerpo .subtitulos {
+        color: #2A2A24;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 1.5em;
+        font-size: 0.8em;
     }
     .cuerpo .articulos-lectura {
         display: inline-block;
@@ -359,14 +366,7 @@ body {
         padding: 0.5em;
         font-size: 1em; 
     }
-    .cabeza .titulo-info h3 {
-        padding: 0.5em;
-        font-size: 0.6em;  
-    }
-    .cabeza .titulo-blog h3 {
-        padding: 0.8em;
-        font-size: 0.6em;  
-    }
+
 
     .cuerpo .articulos-lectura .articulo {
         width: 65%;
@@ -387,13 +387,13 @@ body {
     }
     
     .cuerpo .formulario .comun {
-        width: 95%;
+        width: 20em;
     }
     .cuerpo .formulario .email {
-        width: 95%;
+        width: 20em;
     }
     .cuerpo .formulario .largo {
-        width: 95%;
+        width: 20em;
     }
 
     .menu-pie { 
