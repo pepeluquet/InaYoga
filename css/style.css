@@ -110,12 +110,12 @@ body {
     height: 30em;
 }
 
-.cabeza .titulo h1 {
+.cabeza h1 {
     color: #483d8b;
     font-size: 2.3em
 }
 
-.cabeza .titulo h3 {
+.cabeza h3 {
     color: #2A2A24;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
