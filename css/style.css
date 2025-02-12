@@ -12,7 +12,7 @@ box-model
 }
 
 
-body {
+.completo {
     background-color: #E5E6E7;
     display: flex;
     flex-wrap: wrap;
@@ -349,6 +349,12 @@ body {
         " pie   "   
         ;
     }
+
+    .cabeza .titulo h3 {
+        padding: 0.5em;
+        font-size: 1em; 
+    }
+
     .cuerpo .subtitulos {
         color: #2A2A24;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -362,12 +368,6 @@ body {
         padding-left: 1.5em;
         padding-right: 1.5em;
     }
-    .cabeza .titulo h3 {
-        padding: 0.5em;
-        font-size: 1em; 
-    }
-
-
     .cuerpo .articulos-lectura .articulo {
         width: 65%;
     }

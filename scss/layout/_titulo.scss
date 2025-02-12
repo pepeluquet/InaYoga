@@ -1,0 +1,55 @@
+// titulos de cabeza en los html
+
+.cabeza {
+    h1 {
+        color: $violet-title;
+        font-size: 2.3em
+    }
+    h3 {
+        color: $black-subti;
+        font-family: $title-subti;
+        text-align: center;
+        padding: 1em;
+        font-size: 1.2em; 
+    }
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        background-color: $white-titulo;
+        text-align: center;
+        background-image: url(../assets/foto1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 30em;
+    }
+    .titulo-info {
+        background-image: url(../assets/foto7.jpg);
+        // display: flex;
+        // flex-direction: column;
+        // background-color: #f8e1ce;
+        // text-align: center;        
+        // background-position: center;
+        // background-size: cover;
+        // height: 30em;
+    }
+    .titulo-blog {
+        background-image: url(../assets/foto5.jpg);
+        // display: flex;
+        // flex-direction: column;
+        // background-color: #f8e1ce;
+        // text-align: center;     
+        // background-position: center;
+        // background-size: cover;
+        // height: 30em;
+    }
+    .titulo-contacto {
+        background-image: url(../assets/foto6.jpg);
+        // display: flex;
+        // flex-direction: column;
+        // background-color: #f8e1ce;
+        // text-align: center;        
+        // background-position: center;
+        // background-size: cover;
+        // height: 30em;
+    }
+}

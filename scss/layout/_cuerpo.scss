@@ -1,0 +1,79 @@
+// cuerpo
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    grid-area: cuerpo;
+    .subtitulos {
+        color: $black-subti;
+        font-family: $title-subti;
+        text-align: center;
+        padding: 2.2em;
+        font-size: 1.5em;
+    }
+    .articulos-lectura {   
+        background-color: $orange-cuerpo;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display:inline-flex;
+        flex-direction: row;
+        align-items: center;
+        .articulo-info {
+            background-color: $white-titulo;
+            border-radius: 0.5em;
+        }
+        .parrafo-info {
+            width: 100%;
+            align-items: center;
+            padding: 2em;
+            margin: 2em;
+            font-size: 1.2em;
+        }}
+    .carousel {
+        background-color: $white-titulo;
+        background-position: center;
+        border-radius: 0.5em;
+        margin: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .articulos-videos {   
+        background-color: $orange-cuerpo;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .articulos-lectura-blog {
+        display:inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: $orange-cuerpo;
+        align-items: center;
+    
+        padding-top: 2em;
+        padding-left: 1em;
+        padding-bottom: 2em;
+        padding-right: 1em;
+        .card{
+            margin-left: 1em;
+            margin-right: 1em;
+        }}
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around ;
+        align-items: flex-start;
+        background-color: $orange-cuerpo;
+    
+        padding-top: 2em;
+        padding-bottom: 2em;
+        .comun {
+            width: 20em;
+        }
+        .email {
+            width: 30em;
+        }
+        .largo {
+            width: 50em;
+        }
+    }
+}

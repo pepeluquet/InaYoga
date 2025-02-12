@@ -1,0 +1,13 @@
+// grid container
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 0.3fr 1fr 0.1fr 0.01fr;
+    grid-template-areas: 
+            "cabeza  cabeza  cabeza"
+            "cuerpo  cuerpo  cuerpo"
+            "cuerpo  cuerpo  cuerpo"
+            " pie     pie     pie"    
+    ;
+}

@@ -1,0 +1,79 @@
+// media queris Mobile 480px
+
+@media (max-width: 480px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.1fr 0.02fr;
+        grid-template-areas: 
+        "cabeza "
+        "cuerpo "
+        "cuerpo "
+        " pie   "   
+        ;
+    }
+    .cabeza {
+        .titulo {
+            h3 {
+                padding: 0.5em;
+                font-size: 1.2em; 
+            }   
+        } 
+    }
+    .cuerpo {
+        .subtitulos {
+            padding: 1.5em;
+            font-size: 1.1em;
+        }
+        .articulos-lectura {
+            display: inline-block;
+            background-color: $violet-480;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            .articulo {
+                width: 65%;
+            }
+        }   
+        .articulos-videos {
+            .articulo {
+                width: 65%; 
+            }
+        }
+        .formulario {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around ;
+            align-items: flex-start;
+            background-color: $orange-cuerpo;      
+            padding-top: 2em;
+            padding-bottom: 2em;
+            .comun {
+                width: 20em;
+            }
+            .email {
+                width: 20em;
+            }
+            .largo {
+                width: 20em;
+            }
+        }
+    }
+    .pie {
+        .menu-pie { 
+            height: 1.5em;
+            .logo{
+                height: 1.5em ;
+            }
+            .link {
+                li {
+                    padding: 0.5em;
+                }
+            } 
+            .redes {
+                li {
+                    padding: 0.5em;
+                }
+            } 
+        }
+    }
+}

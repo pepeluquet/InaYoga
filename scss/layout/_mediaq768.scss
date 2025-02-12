@@ -1,0 +1,72 @@
+// media queris tablet 768px
+
+@media (max-width: 768px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.04fr;
+        grid-template-areas: 
+        "cabeza cabeza  "
+        "cuerpo cuerpo "
+        "cuerpo cuerpo "
+        " pie    pie   "   
+        ;
+    }
+    .cabeza {
+        .titulo {
+            h3 {
+                padding: 0.8em;
+                font-size: 1.2em; 
+            }   
+        } 
+    }
+    .cuerpo {
+        .subtitulos {
+            padding: 1.8em;
+            font-size: 1.2em;
+        }
+        .articulos-lectura {
+            display: inline-block;
+            background-color: $violet-768;
+            padding-left: 2em;
+            padding-right: 2em;
+            .articulo {
+                width: 80%;
+            }
+        }   
+        .articulos-videos {
+            .articulo {
+                width: 80%; 
+            }
+        }
+        .formulario {
+            .comun {
+                width: 40em;
+            }
+            .email {
+                width: 40em;
+            }
+            .largo {
+                width: 40em;
+            }
+        }
+    }
+    .pie {
+        .menu-pie { 
+            height: 1.6em;
+            .logo{
+                height: 1.5em ;
+            }
+            .link {
+                li {
+                    padding: 0.5em;
+                }
+            } 
+            .redes {
+                li {
+                    padding: 0.5em;
+                }
+            } 
+        }
+    }
+}
