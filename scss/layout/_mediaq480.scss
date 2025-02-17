@@ -27,7 +27,7 @@
         }
         .articulos-lectura {
             display: inline-block;
-            background-color: $violet-480;
+            background-color: map-get($color-bg , violet-480 );
             padding-left: 1.5em;
             padding-right: 1.5em;
             .articulo {
@@ -44,7 +44,7 @@
             flex-wrap: wrap;
             justify-content:space-around ;
             align-items: flex-start;
-            background-color: $orange-cuerpo;      
+            background-color: map-get($color-bg , orange-cuerpo );      
             padding-top: 2em;
             padding-bottom: 2em;
             .comun {

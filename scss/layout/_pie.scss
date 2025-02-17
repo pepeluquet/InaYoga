@@ -3,14 +3,14 @@
 .pie {
     grid-area: pie;
     .registro {
-        background-color: $orange-menu;
+        background-color: map-get($color-bg , orange-menu );
     }
     .menu-pie {
         display: flex;
         justify-content: space-around; 
         height: 2.5em;
         align-items: center;
-        background-color: $orange-menu;
+        background-color: map-get($color-bg , orange-menu );
         .link {
             display: flex;
             justify-content: space-around;
@@ -19,7 +19,7 @@
                 padding: 1.0em;
                 a {
                     text-decoration: none;
-                    color: $white-menu;
+                    color: map-get($color-bg , white-menu );
                 }
             }
         }
@@ -32,13 +32,13 @@
             list-style: none;
             a {
                 text-decoration: none;
-                color: $white-menu;
+                color: map-get($color-bg , white-menu );
             }
             li {
                 padding: 1.0em;
                 a {
                     text-decoration: none;
-                    color: $white-menu;
+                    color: map-get($color-bg , white-menu );
                 }
             }
         }

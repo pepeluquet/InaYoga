@@ -8,7 +8,7 @@
         justify-content: space-around; 
         height: 2.5em;
         align-items: center;
-        background-color: $orange-menu;
+        background-color: map-get($color-bg , orange-menu );
         .logo {
             height: 2.5em;
         }
@@ -18,14 +18,14 @@
                 list-style: none;
                 flex-basis: auto;
                 a {
-                    color: $white-menu;
+                    color: map-get($color-bg , white-menu );
                     text-decoration:overline;
                 }
             }
             li {
                 padding: 1.5em;
                 a {
-                    color: $white-menu;
+                    color: map-get($color-bg , white-menu );
                     text-decoration:overline;
                 }
             }

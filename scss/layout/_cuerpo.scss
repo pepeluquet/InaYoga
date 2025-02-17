@@ -5,21 +5,22 @@
     flex-direction: column;
     grid-area: cuerpo;
     .subtitulos {
-        color: $black-subti;
-        font-family: $title-subti;
+        color: map-get($color-bg , black-subti );
+        font-family: map-get($txt-title , title-subti );
         text-align: center;
         padding: 2.2em;
         font-size: 1.5em;
     }
-    .articulos-lectura {   
-        background-color: $orange-cuerpo;
+    .articulos-lectura {
+        justify-content: space-around;
+        background-color: map-get($color-bg , orange-cuerpo );
         padding-top: 2em;
         padding-bottom: 2em;
         display:inline-flex;
         flex-direction: row;
         align-items: center;
         .articulo-info {
-            background-color: $white-titulo;
+            background-color: map-get($color-bg , white-titulo );
             border-radius: 0.5em;
         }
         .parrafo-info {
@@ -30,15 +31,16 @@
             font-size: 1.2em;
         }}
     .carousel {
-        background-color: $white-titulo;
+        background-color: map-get($color-bg , white-titulo );
         background-position: center;
         border-radius: 0.5em;
         margin: 1em;
         padding-left: 1em;
         padding-right: 1em;
     }
-    .articulos-videos {   
-        background-color: $orange-cuerpo;
+    .articulos-videos {
+        justify-content: space-around;
+        background-color: map-get($color-bg , orange-cuerpo );
         padding-top: 2em;
         padding-bottom: 2em;
     }
@@ -46,7 +48,7 @@
         display:inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: $orange-cuerpo;
+        background-color: map-get($color-bg , orange-cuerpo );
         align-items: center;
     
         padding-top: 2em;
@@ -62,7 +64,7 @@
         flex-wrap: wrap;
         justify-content:space-around ;
         align-items: flex-start;
-        background-color: $orange-cuerpo;
+        background-color: map-get($color-bg , orange-cuerpo );
     
         padding-top: 2em;
         padding-bottom: 2em;
