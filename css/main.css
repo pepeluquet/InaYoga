@@ -7,7 +7,6 @@
 
 .completo {
   flex-wrap: wrap;
-  justify-content: space-around;
   width: 100%;
 }
 
@@ -51,9 +50,36 @@
   text-decoration: overline;
 }
 
-.cabeza h1 {
+.cabeza .tracking-in-contract {
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   color: #483d8b;
-  font-size: 2.3em;
+  font-size: 3.5em;
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
 }
 .cabeza h3 {
   color: #2A2A24;
@@ -127,6 +153,10 @@
   background-color: #DDA15E;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+.cuerpo .articulos-videos .col {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .cuerpo .articulos-lectura-blog {
   display: inline-flex;
