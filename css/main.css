@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans";
   box-sizing: border-box;
 }
 
@@ -81,22 +80,23 @@
     opacity: 1;
   }
 }
-.cabeza h3 {
-  color: #2A2A24;
-  font-family: "Tahoma, sans-serif";
-  text-align: center;
-  padding: 1em;
-  font-size: 1.2em;
-}
 .cabeza .titulo {
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
+  font-family: "Noto Sans";
   text-align: center;
   background-image: url(../assets/foto1.jpg);
   background-position: center;
   background-size: cover;
   height: 30em;
+}
+.cabeza .titulo h3 {
+  color: #2A2A24;
+  font-family: "system-ui";
+  text-align: center;
+  padding: 1em;
+  font-size: 1.8em;
 }
 .cabeza .titulo-info {
   background-image: url(../assets/foto7.jpg);
@@ -115,7 +115,7 @@
 }
 .cuerpo .subtitulos {
   color: #2A2A24;
-  font-family: "Tahoma, sans-serif";
+  font-family: "Tahoma";
   text-align: center;
   padding: 2.2em;
   font-size: 1.5em;
@@ -225,16 +225,12 @@
   justify-content: space-around;
   list-style: none;
 }
-.pie .menu-pie .redes a {
-  text-decoration: none;
-  color: #f5f5dc;
-}
 .pie .menu-pie .redes li {
-  padding: 1em;
+  border-top-width: 20px;
+  padding-top: 20px;
 }
-.pie .menu-pie .redes li a {
-  text-decoration: none;
-  color: #f5f5dc;
+.pie .menu-pie .redes li img {
+  width: 50px;
 }
 
 @media (max-width: 768px) {
