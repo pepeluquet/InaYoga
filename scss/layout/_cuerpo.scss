@@ -53,7 +53,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         background-color: map-get($color-bg , orange-cuerpo );
-        align-items: center;
+        justify-content: space-around;
     
         padding-top: 2em;
         padding-left: 1em;
