@@ -6,11 +6,9 @@ El proyecto **InaYoga** fue pensado en una convinacion de trabajo para presentar
 
 ## Descripción General
 
-Este sitio web es la plataforma digital de **Ina Robledo**, donde fusiona lo mejor del **Yoga** y el **Stretching** para ofrecer una experiencia integral de bienestar. El objetivo principal es conectar el cuerpo y la mente, promoviendo un equilibrio perfecto que se adapte tanto a principiantes como a practicantes avanzados. A través de esta fusión, InaYoga busca mejorar el bienestar físico y mental de sus usuarios, fomentando la relajación, la fuerza y la movilidad.
+Este sitio web, **Ina Robledo**, es la ventana donde te muestra la fusiona de lo mejor del **Yoga** y el **Stretching** para ofrecer una experiencia integral de bienestar. El objetivo principal es conectar el cuerpo y la mente, promoviendo un equilibrio perfecto que se adapte tanto a principiantes como a practicantes avanzados. A través de esta fusión, InaYoga busca mejorar el bienestar físico y mental de sus usuarios, fomentando la relajación, la fuerza y la movilidad.
 
-**"Encuentra fuerza en la calma y libertad en el movimiento."** Este lema encapsula la filosofía de InaYoga, invitando a los usuarios a descubrir su potencial a través de la práctica consciente y el movimiento libre.
-
-## Propuesta de Valor
+**"Encuentra fuerza en la calma y libertad en el movimiento."** Este lema engloba la filosofía de InaYoga, invitando a los usuarios a descubrir su potencial a través de la práctica consciente y el movimiento libre.
 
 InaYoga se distingue por:
 
@@ -21,11 +19,11 @@ InaYoga se distingue por:
 
 ## Contenido Detallado del Sitio Web
 
-El sitio web está estructurado en varias secciones clave para proporcionar una experiencia completa al usuario:
+El sitio web está estructurado en varias secciones clave:
 
 *   **Inicio:**
     *   Presentación de **Ina Robledo** como la creadora y guía de InaYoga.
-    *   Descripción detallada de la propuesta de valor: la fusión de Yoga y Stretching.
+    *   Descripción detallada de la propuesta: la fusión de Yoga y Stretching.
     *   **Visualización de Artículos y Videos:** Presentación de títulos y breves explicaciones de artículos del blog y videos de práctica, invitando a los usuarios a explorar más a fondo.
 *   **Soy:**
     *   Página dedicada a **Ina Robledo**, donde se describe su enfoque y experiencia en la fusión de Yoga y Stretching.
