@@ -1,12 +1,9 @@
-// titulos de cabeza en los html
-
 .cabeza {
     .tracking-in-contract {
         animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         color: map-get($color-bg , violet-title );
         font-size: 3.5em  
     }
-
     @-webkit-keyframes tracking-in-contract {
         0% {
         letter-spacing: 1em;
@@ -33,7 +30,6 @@
         opacity: 1;
         }
     }  
-   
     .titulo {
         display: flex;
         flex-direction: column;
