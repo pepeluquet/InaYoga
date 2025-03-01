@@ -1,32 +1,30 @@
-.cabeza {
-    .menu {
-        position: sticky;
-        top: 0.1em;
-        display: flex;
-        justify-content: space-around; 
-        height: 2.5em;
-        align-items: center;
-        background-color: map-get($color-bg , orange-menu );
+.navbar {
+    position: sticky;
+    top: 0.1em;
+    display: flex;
+    justify-content: space-around; 
+    height: 2.5em;
+    align-items: center;
+    background-color: map-get($color-bg , orange-menu );
+    &-brand{
         .logo {
             height: 2.5em;
         }
-        .navegacion {
-            ul {
-                display: flex;
-                list-style: none;
-                flex-basis: auto;
-                a {
-                    color: map-get($color-bg , white-menu );
-                    text-decoration:overline;
-                }
-            }
-            li {
-                padding: 1.5em;
-                a {
-                    color: map-get($color-bg , white-menu );
-                    text-decoration:overline;
-                }
-            }
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        flex-basis: auto;
+        a {
+            color: map-get($color-bg , white-menu );
+            text-decoration:overline;
         }
     }
+    li {
+        padding: 1.5em;
+        a {
+            color: map-get($color-bg , white-menu );
+            text-decoration:overline;
+        }
+    }           
 }

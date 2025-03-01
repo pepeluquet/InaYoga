@@ -19,6 +19,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <!-- ponemos el titulo de la pestaña -->    
     <title>Hablo - InaYoga</title>
 </head>
@@ -26,18 +28,29 @@
     <div class="completo">
         <div class="grid-container">
             <header class="cabeza grid-setter">
-                <!-- menu de navegacion, el cual contiene los link para los demas html y el logo de la marca -->
-                <section class="menu">
-                    <nav class="navegacion">
-                        <ul>
-                            <li><a href="./info.html">Soy</a></li>
-                            <li><a href="./contacto.html">Escucho</a></li>
-                            <li><a href="../index.html">InaYoga</a></li>
+                <!-- menu de navegacion -->    
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mi-menu" aria-controls="mi-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" data-aos="fade-left" src="../assets/logo.png" alt="logo InaYoga" />
+                    </a>                 
+                    <div class="collapse navbar-collapse" id="mi-menu">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./info.html">Soy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Escucho</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">InaYoga</a>
+                            </li>
                         </ul>
-                    </nav>
-                    <img class="logo" data-aos="fade-left" src="../assets/logo.png" alt="logo InaYoga" />
-                </section>
-                <!-- Se encuntra el titulo con animacion, el subtitulo y la imagen de fondo a travez del SCSS para cada html -->        
+                    </div>
+                </nav>
+                <!-- Sección de título --> 
                 <div class="titulo-blog">
                     <h1 class="tracking-in-contract">Hablo</h1>
                     <h3>BLOG</h3>
@@ -100,8 +113,20 @@
                 <!-- links de redes, logo y sub-menu de navegacion  -->
                 <section class="menu-pie">
                     <ul class="redes">
-                        <li><img src="../assets/facebook.png" alt="facebook"></a></li> <!-- Esto se completa cuando se cree la pagina de Facebook -->
-                        <li><img src="../assets/instagram.png" alt="instagram"></a></li> <!-- Esto se completa cuando se cree la pagina de Instagram -->
+                        <div class="wrapper">
+                            <a href="#" class="icon facebook">
+                                <div class="tooltip">Facebook</div>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a href="#" class="icon instagram">
+                                <div class="tooltip">Instagram</div>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </a>
+                            <a href="#" class="icon youtube">
+                                <div class="tooltip">Youtube</div>
+                                <span><i class="fab fa-youtube"></i></span><span>
+                            </a>
+                        </div>
                     </ul>
                     <img class="logo" src="../assets/logo.png" alt="logo InaYoga"/>                   
                     <ul class="link">
@@ -118,8 +143,6 @@
     </div>
     <!-- scrip boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

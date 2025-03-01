@@ -20,7 +20,7 @@
   grid-area: cabeza;
 }
 
-.cabeza .menu {
+.navbar {
   position: sticky;
   top: 0.1em;
   display: flex;
@@ -29,22 +29,22 @@
   align-items: center;
   background-color: #809671;
 }
-.cabeza .menu .logo {
+.navbar-brand .logo {
   height: 2.5em;
 }
-.cabeza .menu .navegacion ul {
+.navbar ul {
   display: flex;
   list-style: none;
   flex-basis: auto;
 }
-.cabeza .menu .navegacion ul a {
+.navbar ul a {
   color: #f5f5dc;
   text-decoration: overline;
 }
-.cabeza .menu .navegacion li {
+.navbar li {
   padding: 1.5em;
 }
-.cabeza .menu .navegacion li a {
+.navbar li a {
   color: #f5f5dc;
   text-decoration: overline;
 }
@@ -199,10 +199,6 @@
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.cuerpo .articulos-videos .col {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .cuerpo .articulos-lectura-blog {
   display: inline-flex;
   flex-direction: row;
@@ -297,7 +293,16 @@
   color: #333;
   text-decoration: none;
 }
-
+.wrapper .icon:hover .tooltip {
+  top: -2.8em;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
 .wrapper .tooltip {
   position: absolute;
   top: 0;
@@ -311,7 +316,6 @@
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 .wrapper .tooltip::before {
   position: absolute;
   content: "";
@@ -323,38 +327,38 @@
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
-.wrapper .icon:hover .tooltip {
-  top: -2.8em;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
+.wrapper .facebook:hover {
   background-color: #3b5998;
   color: #E5D2B8;
 }
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
+.wrapper .facebook:hover .tooltip {
+  background-color: #3b5998;
+  color: #E5D2B8;
+}
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5998;
+}
+.wrapper .instagram:hover {
   background-color: #d64b79;
   color: #E5D2B8;
 }
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
+.wrapper .instagram:hover .tooltip {
+  background-color: #d64b79;
+  color: #E5D2B8;
+}
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #d64b79;
+}
+.wrapper .youtube:hover {
   background-color: #c4302b;
   color: #E5D2B8;
+}
+.wrapper .youtube:hover .tooltip {
+  background-color: #c4302b;
+  color: #E5D2B8;
+}
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #c4302b;
 }
 
 @media (max-width: 768px) {
@@ -402,8 +406,17 @@
   .pie .menu-pie .link li {
     padding: 0.5em;
   }
-  .pie .menu-pie .redes li {
-    padding: 0.5em;
+  .pie .menu-pie .redes .wrapper .icon {
+    margin: 0.2em;
+    padding: 0.01em 0.4em;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    font-size: 1em;
+    margin-top: 1.2em;
+  }
+  .pie .menu-pie .redes .wrapper .icon:hover .tooltip {
+    top: -1.8em;
   }
 }
 @media (max-width: 480px) {
