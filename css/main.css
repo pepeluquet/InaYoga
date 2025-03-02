@@ -20,38 +20,39 @@
   grid-area: cabeza;
 }
 
-.cabeza .menu {
+.navbar {
   position: sticky;
   top: 0.1em;
   display: flex;
   justify-content: space-around;
   height: 2.5em;
   align-items: center;
-  background-color: #BB6A24;
+  background-color: #809671;
 }
-.cabeza .menu .logo {
-  height: 2.5em;
+.navbar-brand .logo {
+  height: 2em;
 }
-.cabeza .menu .navegacion ul {
+.navbar ul {
   display: flex;
   list-style: none;
   flex-basis: auto;
 }
-.cabeza .menu .navegacion ul a {
-  color: #f5f5dc;
+.navbar ul a {
+  color: #809671;
   text-decoration: overline;
 }
-.cabeza .menu .navegacion li {
+.navbar li {
   padding: 1.5em;
 }
-.cabeza .menu .navegacion li a {
+.navbar li a {
   color: #f5f5dc;
   text-decoration: overline;
+  font-weight: 650;
 }
 
 .cabeza .tracking-in-contract {
   animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  color: #483d8b;
+  color: #725C3A;
   font-size: 3.5em;
 }
 @-webkit-keyframes tracking-in-contract {
@@ -86,7 +87,7 @@
   background-color: #f8e1ce;
   font-family: "Noto Sans";
   text-align: center;
-  background-image: url(../assets/foto1.jpg);
+  background-image: url(../assets/foto1.webp);
   background-position: center;
   background-size: cover;
   height: 30em;
@@ -99,7 +100,7 @@
   font-size: 1.8em;
 }
 .cabeza .titulo-info {
-  background-image: url(../assets/foto7.jpg);
+  background-image: url(../assets/foto7.webp);
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
@@ -167,7 +168,7 @@
 }
 .cuerpo .articulos-lectura {
   justify-content: space-around;
-  background-color: #DDA15E;
+  background-color: #B3B792;
   padding-top: 2em;
   padding-bottom: 2em;
   display: inline-flex;
@@ -195,19 +196,15 @@
 }
 .cuerpo .articulos-videos {
   justify-content: space-around;
-  background-color: #DDA15E;
+  background-color: #B3B792;
   padding-top: 2em;
   padding-bottom: 2em;
-}
-.cuerpo .articulos-videos .col {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .cuerpo .articulos-lectura-blog {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #DDA15E;
+  background-color: #B3B792;
   justify-content: space-around;
   padding-top: 2em;
   padding-left: 1em;
@@ -223,7 +220,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: #DDA15E;
+  background-color: #B3B792;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -241,14 +238,14 @@
   grid-area: pie;
 }
 .pie .registro {
-  background-color: #BB6A24;
+  background-color: #809671;
 }
 .pie .menu-pie {
   display: flex;
   justify-content: space-around;
   height: 2.5em;
   align-items: center;
-  background-color: #BB6A24;
+  background-color: #809671;
 }
 .pie .menu-pie .link {
   display: flex;
@@ -259,8 +256,9 @@
   padding: 1em;
 }
 .pie .menu-pie .link li a {
-  text-decoration: none;
+  text-decoration: overline;
   color: #f5f5dc;
+  font-weight: 650;
 }
 .pie .menu-pie .logo {
   height: 2.5em;
@@ -276,6 +274,93 @@
 }
 .pie .menu-pie .redes li img {
   width: 50px;
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #E5D2B8;
+  border-radius: 50%;
+  margin: 0.3em;
+  padding: 0.1em 0.7em;
+  width: 2.3em;
+  height: 2.3em;
+  line-height: 2.1em;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 1.5em;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .icon:hover .tooltip {
+  top: -2.8em;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.2em;
+  font-size: 1em;
+  background-color: #E5D2B8;
+  color: #E5D2B8;
+  padding: 0.5em 1em;
+  border-radius: 1.5em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #E5D2B8;
+  bottom: -0.2em;
+  left: 35%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .facebook:hover {
+  background-color: #3b5998;
+  color: #E5D2B8;
+}
+.wrapper .facebook:hover .tooltip {
+  background-color: #3b5998;
+  color: #E5D2B8;
+}
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5998;
+}
+.wrapper .instagram:hover {
+  background-color: #d64b79;
+  color: #E5D2B8;
+}
+.wrapper .instagram:hover .tooltip {
+  background-color: #d64b79;
+  color: #E5D2B8;
+}
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #d64b79;
+}
+.wrapper .youtube:hover {
+  background-color: #c4302b;
+  color: #E5D2B8;
+}
+.wrapper .youtube:hover .tooltip {
+  background-color: #c4302b;
+  color: #E5D2B8;
+}
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #c4302b;
 }
 
 @media (max-width: 768px) {
@@ -295,7 +380,7 @@
   }
   .cuerpo .articulos-lectura {
     display: inline-block;
-    background-color: #7a5edd;
+    background-color: #DDBA94;
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -323,8 +408,17 @@
   .pie .menu-pie .link li {
     padding: 0.5em;
   }
-  .pie .menu-pie .redes li {
-    padding: 0.5em;
+  .pie .menu-pie .redes .wrapper .icon {
+    margin: 0.2em;
+    padding: 0.01em 0.4em;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    font-size: 1em;
+    margin-top: 1.2em;
+  }
+  .pie .menu-pie .redes .wrapper .icon:hover .tooltip {
+    top: -1.8em;
   }
 }
 @media (max-width: 480px) {
@@ -344,7 +438,7 @@
   }
   .cuerpo .articulos-lectura {
     display: inline-block;
-    background-color: #5a2efc;
+    background-color: #E9E4DD;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
@@ -359,7 +453,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: #DDA15E;
     padding-top: 2em;
     padding-bottom: 2em;
   }

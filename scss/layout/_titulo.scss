@@ -1,12 +1,9 @@
-// titulos de cabeza en los html
-
 .cabeza {
     .tracking-in-contract {
         animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         color: map-get($color-bg , violet-title );
         font-size: 3.5em  
     }
-
     @-webkit-keyframes tracking-in-contract {
         0% {
         letter-spacing: 1em;
@@ -32,15 +29,14 @@
         letter-spacing: normal;
         opacity: 1;
         }
-    }  
-   
+    }
     .titulo {
         display: flex;
         flex-direction: column;
         background-color: map-get($color-bg , white-titulo );
         font-family: map-get($txt-title , title-prin );
         text-align: center;
-        background-image: url(../assets/foto1.jpg);
+        background-image: url(../assets/foto1.webp);
         background-position: center;
         background-size: cover;
         height: 30em;
@@ -53,7 +49,7 @@
         }
     }
     .titulo-info {
-        background-image: url(../assets/foto7.jpg);
+        background-image: url(../assets/foto7.webp);
         display: flex;
         flex-direction: column;
         background-color: map-get($color-bg , white-titulo );

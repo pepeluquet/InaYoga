@@ -1,5 +1,3 @@
-// cuerpo
-
 .cuerpo {
     display: flex;
     flex-direction: column;
@@ -13,7 +11,7 @@
     }
     .articulos-lectura {
         justify-content: space-around;
-        background-color: map-get($color-bg , orange-cuerpo );
+        background-color: map-get($color-bg , tierra-cuerpo );
         padding-top: 2em;
         padding-bottom: 2em;
         display:inline-flex;
@@ -29,7 +27,8 @@
             padding: 2em;
             margin: 2em;
             font-size: 1.2em;
-        }}
+        }
+    }
     .carousel {
         background-color: map-get($color-bg , white-titulo );
         background-position: center;
@@ -40,21 +39,16 @@
     }
     .articulos-videos {
         justify-content: space-around;
-        background-color: map-get($color-bg , orange-cuerpo );
+        background-color: map-get($color-bg , tierra-cuerpo );
         padding-top: 2em;
         padding-bottom: 2em;
-        .col {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
     }
     .articulos-lectura-blog {
         display:inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: map-get($color-bg , orange-cuerpo );
+        background-color: map-get($color-bg , tierra-cuerpo );
         justify-content: space-around;
-    
         padding-top: 2em;
         padding-left: 1em;
         padding-bottom: 2em;
@@ -68,7 +62,7 @@
         flex-wrap: wrap;
         justify-content:space-around ;
         align-items: flex-start;
-        background-color: map-get($color-bg , orange-cuerpo );
+        background-color: map-get($color-bg , tierra-cuerpo );
         padding-top: 2em;
         padding-bottom: 2em;
         .comun {

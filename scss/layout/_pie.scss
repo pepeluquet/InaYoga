@@ -1,16 +1,14 @@
-// pie 
-
 .pie {
     grid-area: pie;
     .registro {
-        background-color: map-get($color-bg , orange-menu );
+        background-color: map-get($color-bg , musgo-menu );
     }
     .menu-pie {
         display: flex;
         justify-content: space-around; 
         height: 2.5em;
         align-items: center;
-        background-color: map-get($color-bg , orange-menu );
+        background-color: map-get($color-bg , musgo-menu );
         .link {
             display: flex;
             justify-content: space-around;
@@ -18,8 +16,9 @@
             li {
                 padding: 1.0em;
                 a {
-                    text-decoration: none;
+                    text-decoration: overline;
                     color: map-get($color-bg , white-menu );
+                    font-weight: 650;
                 }
             }
         }
