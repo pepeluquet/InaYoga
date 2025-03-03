@@ -7,6 +7,7 @@
 .completo {
   flex-wrap: wrap;
   width: 100%;
+  background-color: #f8e1ce;
 }
 
 .grid-container {
@@ -85,7 +86,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
-  font-family: "Noto Sans";
+  font-family: "monomakh";
   text-align: center;
   background-image: url(../assets/foto1.webp);
   background-position: center;
@@ -104,7 +105,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
-  font-family: "Noto Sans";
+  font-family: "monomakh";
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -122,7 +123,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
-  font-family: "Noto Sans";
+  font-family: "monomakh";
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -140,7 +141,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
-  font-family: "Noto Sans";
+  font-family: "monomakh";
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -161,10 +162,10 @@
 }
 .nucleo .subtitulos {
   color: #2A2A24;
-  font-family: "Tahoma";
+  font-family: "Noto Sans";
   text-align: center;
   padding: 2.2em;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 .nucleo .articulos-lectura {
   justify-content: space-around;
@@ -232,48 +233,6 @@
 }
 .nucleo .formulario .largo {
   width: 50em;
-}
-
-.final {
-  grid-area: final;
-}
-.final .registro {
-  background-color: #809671;
-}
-.final .menu-final {
-  display: flex;
-  justify-content: space-around;
-  height: 2.5em;
-  align-items: center;
-  background-color: #809671;
-}
-.final .menu-final .link {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-.final .menu-final .link li {
-  padding: 1em;
-}
-.final .menu-final .link li a {
-  text-decoration: overline;
-  color: #f5f5dc;
-  font-weight: 650;
-}
-.final .menu-final .logo {
-  height: 2.5em;
-}
-.final .menu-final .redes {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-.final .menu-final .redes li {
-  border-top-width: 20px;
-  padding-top: 20px;
-}
-.final .menu-final .redes li img {
-  width: 50px;
 }
 
 .wrapper .icon {
@@ -363,6 +322,48 @@
   background-color: #c4302b;
 }
 
+.final {
+  grid-area: final;
+}
+.final .registro {
+  background-color: #809671;
+}
+.final .menu-final {
+  display: flex;
+  justify-content: space-around;
+  height: 2.5em;
+  align-items: center;
+  background-color: #809671;
+}
+.final .menu-final .link {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.final .menu-final .link li {
+  padding: 1em;
+}
+.final .menu-final .link li a {
+  text-decoration: overline;
+  color: #f5f5dc;
+  font-weight: 650;
+}
+.final .menu-final .logo {
+  height: 2.5em;
+}
+.final .menu-final .redes {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.final .menu-final .redes li {
+  border-top-width: 20px;
+  padding-top: 20px;
+}
+.final .menu-final .redes li img {
+  width: 50px;
+}
+
 @media (max-width: 768px) {
   .grid-container {
     display: grid;
@@ -376,7 +377,7 @@
   }
   .nucleo .subtitulos {
     padding: 1.8em;
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
   .nucleo .articulos-lectura {
     display: inline-block;
@@ -434,7 +435,7 @@
   }
   .nucleo .subtitulos {
     padding: 1.5em;
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   .nucleo .articulos-lectura {
     display: inline-block;
