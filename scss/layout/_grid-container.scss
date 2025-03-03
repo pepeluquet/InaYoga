@@ -3,9 +3,9 @@
     grid-template-columns: repeat(3, 1fr) ;
     grid-template-rows: 0.3fr 1fr 0.1fr 0.01fr;
     grid-template-areas: 
-            "cabeza  cabeza  cabeza"
-            "cuerpo  cuerpo  cuerpo"
-            "cuerpo  cuerpo  cuerpo"
-            " pie     pie     pie"    
+            "portada  portada  portada"
+            "nucleo  nucleo  nucleo"
+            "nucleo  nucleo  nucleo"
+            " final     final     final"    
     ;
 }

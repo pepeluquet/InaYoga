@@ -4,13 +4,13 @@
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 0.1fr 0.02fr;
         grid-template-areas: 
-        "cabeza "
-        "cuerpo "
-        "cuerpo "
-        " pie   "   
+        "portada "
+        "nucleo "
+        "nucleo "
+        " final   "   
         ;
     }
-    .cabeza {
+    .portada {
         .titulo {
             h3 {
                 padding: 0.5em;
@@ -18,10 +18,10 @@
             }   
         } 
     }
-    .cuerpo {
+    .nucleo {
         .subtitulos {
             padding: 1.5em;
-            font-size: 1.1em;
+            font-size: 1.5em;
         }
         .articulos-lectura {
             display: inline-block;
@@ -42,7 +42,7 @@
             flex-wrap: wrap;
             justify-content:space-around ;
             align-items: flex-start;
-            background-color: map-get($color-bg , orange-cuerpo );      
+            background-color: map-get($color-bg , orange-nucleo );      
             padding-top: 2em;
             padding-bottom: 2em;
             .comun {
@@ -56,8 +56,8 @@
             }
         }
     }
-    .pie {
-        .menu-pie { 
+    .final {
+        .menu-final { 
             height: 1.5em;
             .logo{
                 height: 1.5em ;

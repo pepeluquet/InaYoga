@@ -4,13 +4,13 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.2fr 1fr 0.5fr 0.04fr;
         grid-template-areas: 
-        "cabeza cabeza  "
-        "cuerpo cuerpo "
-        "cuerpo cuerpo "
-        " pie    pie   "   
+        "portada portada  "
+        "nucleo nucleo "
+        "nucleo nucleo "
+        " final    final   "   
         ;
     }
-    .cabeza {
+    .portada {
         .titulo {
             h3 {
                 padding: 0.8em;
@@ -18,10 +18,10 @@
             }   
         } 
     }
-    .cuerpo {
+    .nucleo {
         .subtitulos {
             padding: 1.8em;
-            font-size: 1.2em;
+            font-size: 1.6em;
         }
         .articulos-lectura {
             display: inline-block;
@@ -49,8 +49,8 @@
             }
         }
     }
-    .pie {
-        .menu-pie { 
+    .final {
+        .menu-final { 
             height: 1.6em;
             .logo{
                 height: 1.5em ;

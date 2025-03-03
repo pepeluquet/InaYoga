@@ -1,17 +1,17 @@
-.cuerpo {
+.nucleo {
     display: flex;
     flex-direction: column;
-    grid-area: cuerpo;
+    grid-area: nucleo;
     .subtitulos {
         color: map-get($color-bg , black-subti );
         font-family: map-get($txt-title , title-subti );
         text-align: center;
         padding: 2.2em;
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
     .articulos-lectura {
         justify-content: space-around;
-        background-color: map-get($color-bg , tierra-cuerpo );
+        background-color: map-get($color-bg , tierra-nucleo );
         padding-top: 2em;
         padding-bottom: 2em;
         display:inline-flex;
@@ -39,7 +39,7 @@
     }
     .articulos-videos {
         justify-content: space-around;
-        background-color: map-get($color-bg , tierra-cuerpo );
+        background-color: map-get($color-bg , tierra-nucleo );
         padding-top: 2em;
         padding-bottom: 2em;
     }
@@ -47,7 +47,7 @@
         display:inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: map-get($color-bg , tierra-cuerpo );
+        background-color: map-get($color-bg , tierra-nucleo );
         justify-content: space-around;
         padding-top: 2em;
         padding-left: 1em;
@@ -62,7 +62,7 @@
         flex-wrap: wrap;
         justify-content:space-around ;
         align-items: flex-start;
-        background-color: map-get($color-bg , tierra-cuerpo );
+        background-color: map-get($color-bg , tierra-nucleo );
         padding-top: 2em;
         padding-bottom: 2em;
         .comun {

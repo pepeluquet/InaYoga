@@ -1,9 +1,9 @@
-.pie {
-    grid-area: pie;
+.final {
+    grid-area: final;
     .registro {
         background-color: map-get($color-bg , musgo-menu );
     }
-    .menu-pie {
+    .menu-final {
         display: flex;
         justify-content: space-around; 
         height: 2.5em;

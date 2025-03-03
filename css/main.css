@@ -13,11 +13,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.3fr 1fr 0.1fr 0.01fr;
-  grid-template-areas: "cabeza  cabeza  cabeza" "cuerpo  cuerpo  cuerpo" "cuerpo  cuerpo  cuerpo" " pie     pie     pie";
+  grid-template-areas: "portada  portada  portada" "nucleo  nucleo  nucleo" "nucleo  nucleo  nucleo" " final     final     final";
 }
 
-.cabeza {
-  grid-area: cabeza;
+.portada {
+  grid-area: portada;
 }
 
 .navbar {
@@ -50,7 +50,7 @@
   font-weight: 650;
 }
 
-.cabeza .tracking-in-contract {
+.portada .tracking-in-contract {
   animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   color: #725C3A;
   font-size: 3.5em;
@@ -81,7 +81,7 @@
     opacity: 1;
   }
 }
-.cabeza .titulo {
+.portada .titulo {
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
@@ -92,14 +92,14 @@
   background-size: cover;
   height: 30em;
 }
-.cabeza .titulo h3 {
+.portada .titulo h3 {
   color: #2A2A24;
   font-family: "system-ui";
   text-align: center;
   padding: 1em;
   font-size: 1.8em;
 }
-.cabeza .titulo-info {
+.portada .titulo-info {
   background-image: url(../assets/foto7.webp);
   display: flex;
   flex-direction: column;
@@ -110,14 +110,14 @@
   background-size: cover;
   height: 30em;
 }
-.cabeza .titulo-info h3 {
+.portada .titulo-info h3 {
   color: #2A2A24;
   font-family: "system-ui";
   text-align: center;
   padding: 1em;
   font-size: 1.8em;
 }
-.cabeza .titulo-blog {
+.portada .titulo-blog {
   background-image: url(../assets/foto5.jpg);
   display: flex;
   flex-direction: column;
@@ -128,14 +128,14 @@
   background-size: cover;
   height: 30em;
 }
-.cabeza .titulo-blog h3 {
+.portada .titulo-blog h3 {
   color: #2A2A24;
   font-family: "system-ui";
   text-align: center;
   padding: 1em;
   font-size: 1.8em;
 }
-.cabeza .titulo-contacto {
+.portada .titulo-contacto {
   background-image: url(../assets/foto6.jpg);
   display: flex;
   flex-direction: column;
@@ -146,7 +146,7 @@
   background-size: cover;
   height: 30em;
 }
-.cabeza .titulo-contacto h3 {
+.portada .titulo-contacto h3 {
   color: #2A2A24;
   font-family: "system-ui";
   text-align: center;
@@ -154,19 +154,19 @@
   font-size: 1.8em;
 }
 
-.cuerpo {
+.nucleo {
   display: flex;
   flex-direction: column;
-  grid-area: cuerpo;
+  grid-area: nucleo;
 }
-.cuerpo .subtitulos {
+.nucleo .subtitulos {
   color: #2A2A24;
   font-family: "Tahoma";
   text-align: center;
   padding: 2.2em;
   font-size: 1.5em;
 }
-.cuerpo .articulos-lectura {
+.nucleo .articulos-lectura {
   justify-content: space-around;
   background-color: #B3B792;
   padding-top: 2em;
@@ -175,18 +175,18 @@
   flex-direction: row;
   align-items: center;
 }
-.cuerpo .articulos-lectura .articulo-info {
+.nucleo .articulos-lectura .articulo-info {
   background-color: #f8e1ce;
   border-radius: 0.5em;
 }
-.cuerpo .articulos-lectura .parrafo-info {
+.nucleo .articulos-lectura .parrafo-info {
   width: 100%;
   align-items: center;
   padding: 2em;
   margin: 2em;
   font-size: 1.2em;
 }
-.cuerpo .carousel {
+.nucleo .carousel {
   background-color: #f8e1ce;
   background-position: center;
   border-radius: 0.5em;
@@ -194,13 +194,13 @@
   padding-left: 1em;
   padding-right: 1em;
 }
-.cuerpo .articulos-videos {
+.nucleo .articulos-videos {
   justify-content: space-around;
   background-color: #B3B792;
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.cuerpo .articulos-lectura-blog {
+.nucleo .articulos-lectura-blog {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -211,11 +211,11 @@
   padding-bottom: 2em;
   padding-right: 1em;
 }
-.cuerpo .articulos-lectura-blog .card {
+.nucleo .articulos-lectura-blog .card {
   margin-left: 1em;
   margin-right: 1em;
 }
-.cuerpo .formulario {
+.nucleo .formulario {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -224,55 +224,55 @@
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.cuerpo .formulario .comun {
+.nucleo .formulario .comun {
   width: 20em;
 }
-.cuerpo .formulario .email {
+.nucleo .formulario .email {
   width: 30em;
 }
-.cuerpo .formulario .largo {
+.nucleo .formulario .largo {
   width: 50em;
 }
 
-.pie {
-  grid-area: pie;
+.final {
+  grid-area: final;
 }
-.pie .registro {
+.final .registro {
   background-color: #809671;
 }
-.pie .menu-pie {
+.final .menu-final {
   display: flex;
   justify-content: space-around;
   height: 2.5em;
   align-items: center;
   background-color: #809671;
 }
-.pie .menu-pie .link {
+.final .menu-final .link {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-.pie .menu-pie .link li {
+.final .menu-final .link li {
   padding: 1em;
 }
-.pie .menu-pie .link li a {
+.final .menu-final .link li a {
   text-decoration: overline;
   color: #f5f5dc;
   font-weight: 650;
 }
-.pie .menu-pie .logo {
+.final .menu-final .logo {
   height: 2.5em;
 }
-.pie .menu-pie .redes {
+.final .menu-final .redes {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-.pie .menu-pie .redes li {
+.final .menu-final .redes li {
   border-top-width: 20px;
   padding-top: 20px;
 }
-.pie .menu-pie .redes li img {
+.final .menu-final .redes li img {
   width: 50px;
 }
 
@@ -368,47 +368,47 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.2fr 1fr 0.5fr 0.04fr;
-    grid-template-areas: "cabeza cabeza  " "cuerpo cuerpo " "cuerpo cuerpo " " pie    pie   ";
+    grid-template-areas: "portada portada  " "nucleo nucleo " "nucleo nucleo " " final    final   ";
   }
-  .cabeza .titulo h3 {
+  .portada .titulo h3 {
     padding: 0.8em;
     font-size: 1.2em;
   }
-  .cuerpo .subtitulos {
+  .nucleo .subtitulos {
     padding: 1.8em;
     font-size: 1.2em;
   }
-  .cuerpo .articulos-lectura {
+  .nucleo .articulos-lectura {
     display: inline-block;
     background-color: #DDBA94;
     padding-left: 2em;
     padding-right: 2em;
   }
-  .cuerpo .articulos-lectura .articulo {
+  .nucleo .articulos-lectura .articulo {
     width: 80%;
   }
-  .cuerpo .articulos-videos .articulo {
+  .nucleo .articulos-videos .articulo {
     width: 80%;
   }
-  .cuerpo .formulario .comun {
+  .nucleo .formulario .comun {
     width: 40em;
   }
-  .cuerpo .formulario .email {
+  .nucleo .formulario .email {
     width: 40em;
   }
-  .cuerpo .formulario .largo {
+  .nucleo .formulario .largo {
     width: 40em;
   }
-  .pie .menu-pie {
+  .final .menu-final {
     height: 1.6em;
   }
-  .pie .menu-pie .logo {
+  .final .menu-final .logo {
     height: 1.5em;
   }
-  .pie .menu-pie .link li {
+  .final .menu-final .link li {
     padding: 0.5em;
   }
-  .pie .menu-pie .redes .wrapper .icon {
+  .final .menu-final .redes .wrapper .icon {
     margin: 0.2em;
     padding: 0.01em 0.4em;
     width: 1.6em;
@@ -417,7 +417,7 @@
     font-size: 1em;
     margin-top: 1.2em;
   }
-  .pie .menu-pie .redes .wrapper .icon:hover .tooltip {
+  .final .menu-final .redes .wrapper .icon:hover .tooltip {
     top: -1.8em;
   }
 }
@@ -426,29 +426,29 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 0.1fr 0.02fr;
-    grid-template-areas: "cabeza " "cuerpo " "cuerpo " " pie   ";
+    grid-template-areas: "portada " "nucleo " "nucleo " " final   ";
   }
-  .cabeza .titulo h3 {
+  .portada .titulo h3 {
     padding: 0.5em;
     font-size: 1.2em;
   }
-  .cuerpo .subtitulos {
+  .nucleo .subtitulos {
     padding: 1.5em;
     font-size: 1.1em;
   }
-  .cuerpo .articulos-lectura {
+  .nucleo .articulos-lectura {
     display: inline-block;
     background-color: #E9E4DD;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  .cuerpo .articulos-lectura .articulo {
+  .nucleo .articulos-lectura .articulo {
     width: 65%;
   }
-  .cuerpo .articulos-videos .articulo {
+  .nucleo .articulos-videos .articulo {
     width: 65%;
   }
-  .cuerpo .formulario {
+  .nucleo .formulario {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -456,25 +456,25 @@
     padding-top: 2em;
     padding-bottom: 2em;
   }
-  .cuerpo .formulario .comun {
+  .nucleo .formulario .comun {
     width: 20em;
   }
-  .cuerpo .formulario .email {
+  .nucleo .formulario .email {
     width: 20em;
   }
-  .cuerpo .formulario .largo {
+  .nucleo .formulario .largo {
     width: 20em;
   }
-  .pie .menu-pie {
+  .final .menu-final {
     height: 1.5em;
   }
-  .pie .menu-pie .logo {
+  .final .menu-final .logo {
     height: 1.5em;
   }
-  .pie .menu-pie .link li {
+  .final .menu-final .link li {
     padding: 0.5em;
   }
-  .pie .menu-pie .redes li {
+  .final .menu-final .redes li {
     padding: 0.5em;
   }
 }

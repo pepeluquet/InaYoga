@@ -1,4 +1,5 @@
 .completo {
     flex-wrap: wrap;
     width: 100%;   
+    background-color: map-get($color-bg , white-titulo );
 }
