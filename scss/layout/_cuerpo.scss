@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     grid-area: nucleo;
+    background-color: map-get($color-bg , white-titulo );
     .subtitulos {
         color: map-get($color-bg , black-subti );
         font-family: map-get($txt-title , title-subti );
