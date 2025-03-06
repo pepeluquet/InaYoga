@@ -28,13 +28,33 @@
             background-color: map-get($color-bg , violet-480 );
             padding-left: 1.5em;
             padding-right: 1.5em;
-            .articulo {
-                width: 65%;
-            }
+            .row {
+                .col {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .card {
+                        width: 80%;
+                        .articulo {
+                            width: 100%;
+                        }
+                    }                
+                } 
+            }                      
         }   
         .articulos-videos {
-            .articulo {
-                width: 65%; 
+            .row {
+                .col {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .card {
+                        width: 80%;
+                        .articulo {
+                            width: 100%;
+                        }
+                    }                
+                } 
             }
         }
         .formulario {

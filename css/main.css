@@ -7,7 +7,6 @@
 .completo {
   flex-wrap: wrap;
   width: 100%;
-  background-color: #f8e1ce;
 }
 
 .grid-container {
@@ -119,7 +118,7 @@
   font-size: 1.8em;
 }
 .portada .titulo-blog {
-  background-image: url(../assets/foto5.jpg);
+  background-image: url(../assets/foto5.webp);
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
@@ -137,7 +136,7 @@
   font-size: 1.8em;
 }
 .portada .titulo-contacto {
-  background-image: url(../assets/foto6.jpg);
+  background-image: url(../assets/foto6.webp);
   display: flex;
   flex-direction: column;
   background-color: #f8e1ce;
@@ -159,6 +158,7 @@
   display: flex;
   flex-direction: column;
   grid-area: nucleo;
+  background-color: #f8e1ce;
 }
 .nucleo .subtitulos {
   color: #2A2A24;
@@ -443,11 +443,27 @@
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  .nucleo .articulos-lectura .articulo {
-    width: 65%;
+  .nucleo .articulos-lectura .row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .nucleo .articulos-videos .articulo {
-    width: 65%;
+  .nucleo .articulos-lectura .row .col .card {
+    width: 80%;
+  }
+  .nucleo .articulos-lectura .row .col .card .articulo {
+    width: 100%;
+  }
+  .nucleo .articulos-videos .row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nucleo .articulos-videos .row .col .card {
+    width: 80%;
+  }
+  .nucleo .articulos-videos .row .col .card .articulo {
+    width: 100%;
   }
   .nucleo .formulario {
     display: flex;
