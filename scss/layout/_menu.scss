@@ -10,12 +10,22 @@
         .logo {
             height: 2em;
         }
+    .collapse {
+        .navbar-nav{
+            .nav-item {
+                .nav-link {
+                    padding-top: 18em;
+                }               
+            }
+        }
+    }
+
+
     }
     ul {
         display: flex;
         list-style: none;
         flex-basis: auto;
-        padding-top: 18em;
         a {
             color: map-get($color-bg , musgo-menu );
             text-decoration:overline;            
