@@ -11,6 +11,18 @@
         ;
     }
     .portada {
+        .navbar {
+            align-content: center;
+            justify-content: space-evenly;
+            li {
+                padding: 1.5em;
+                a {
+                    color: map-get($color-bg , black-subti );
+                    text-decoration:overline;
+                    font-weight: 650;
+                }
+            }  
+        }
         .titulo {
             h3 {
                 padding: 0.8em;
@@ -28,9 +40,19 @@
             background-color: map-get($color-bg , violet-768 );
             padding-left: 2em;
             padding-right: 2em;
-            .articulo {
-                width: 80%;
-            }
+            .row {
+                .col {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .card {
+                        width: 80%;
+                        .articulo {
+                            width: 100%;
+                        }
+                    }                
+                } 
+            }          
         }   
         .articulos-videos {
             .articulo {
@@ -53,11 +75,14 @@
         .menu-final { 
             height: 1.6em;
             .logo{
+                size: 1em;
                 height: 1.5em ;
             }
             .link {
+                margin-bottom: 00em;
                 li {
                     padding: 0.5em;
+                    margin-bottom: 0px;
                 }
             } 
             .redes {

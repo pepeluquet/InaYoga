@@ -1,0 +1,23 @@
+@media (min-width: 769px) and (max-width: 991px) {
+    .portada {
+        .navbar {
+            align-content: center;
+            justify-content: space-evenly;
+            li {
+                padding: 1.5em;
+                a {
+                    color: map-get($color-bg , black-subti );
+                    text-decoration:overline;
+                    font-weight: 650;
+                }
+            } 
+        }
+    }
+    .final {
+        .menu-final { 
+            .link {
+                margin-bottom: 00em;
+            }
+        }
+    }
+}

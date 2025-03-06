@@ -11,6 +11,18 @@
         ;
     }
     .portada {
+        .navbar {
+            align-content: center;
+            justify-content: space-evenly;
+            li {
+                padding: 1.5em;
+                a {
+                    color: map-get($color-bg , black-subti );
+                    text-decoration:overline;
+                    font-weight: 650;
+                }
+            } 
+        }
         .titulo {
             h3 {
                 padding: 0.5em;
@@ -83,6 +95,7 @@
                 height: 1.5em ;
             }
             .link {
+                margin-bottom: 00em;
                 li {
                     padding: 0.5em;
                 }

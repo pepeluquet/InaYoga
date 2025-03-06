@@ -371,6 +371,18 @@
     grid-template-rows: 0.2fr 1fr 0.5fr 0.04fr;
     grid-template-areas: "portada portada  " "nucleo nucleo " "nucleo nucleo " " final    final   ";
   }
+  .portada .navbar {
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  .portada .navbar li {
+    padding: 1.5em;
+  }
+  .portada .navbar li a {
+    color: #2A2A24;
+    text-decoration: overline;
+    font-weight: 650;
+  }
   .portada .titulo h3 {
     padding: 0.8em;
     font-size: 1.2em;
@@ -385,8 +397,16 @@
     padding-left: 2em;
     padding-right: 2em;
   }
-  .nucleo .articulos-lectura .articulo {
+  .nucleo .articulos-lectura .row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nucleo .articulos-lectura .row .col .card {
     width: 80%;
+  }
+  .nucleo .articulos-lectura .row .col .card .articulo {
+    width: 100%;
   }
   .nucleo .articulos-videos .articulo {
     width: 80%;
@@ -404,10 +424,15 @@
     height: 1.6em;
   }
   .final .menu-final .logo {
+    size: 1em;
     height: 1.5em;
+  }
+  .final .menu-final .link {
+    margin-bottom: 0em;
   }
   .final .menu-final .link li {
     padding: 0.5em;
+    margin-bottom: 0px;
   }
   .final .menu-final .redes .wrapper .icon {
     margin: 0.2em;
@@ -428,6 +453,18 @@
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 0.1fr 0.02fr;
     grid-template-areas: "portada " "nucleo " "nucleo " " final   ";
+  }
+  .portada .navbar {
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  .portada .navbar li {
+    padding: 1.5em;
+  }
+  .portada .navbar li a {
+    color: #2A2A24;
+    text-decoration: overline;
+    font-weight: 650;
   }
   .portada .titulo h3 {
     padding: 0.5em;
@@ -488,11 +525,31 @@
   .final .menu-final .logo {
     height: 1.5em;
   }
+  .final .menu-final .link {
+    margin-bottom: 0em;
+  }
   .final .menu-final .link li {
     padding: 0.5em;
   }
   .final .menu-final .redes li {
     padding: 0.5em;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .portada .navbar {
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  .portada .navbar li {
+    padding: 1.5em;
+  }
+  .portada .navbar li a {
+    color: #2A2A24;
+    text-decoration: overline;
+    font-weight: 650;
+  }
+  .final .menu-final .link {
+    margin-bottom: 0em;
   }
 }
 
