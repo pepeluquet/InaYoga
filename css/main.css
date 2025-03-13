@@ -52,6 +52,10 @@
   text-decoration: overline;
   font-weight: 650;
 }
+.navbar li .name {
+  color: #809671;
+  font-weight: 650;
+}
 
 .portada .tracking-in-contract {
   animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -375,16 +379,27 @@
     grid-template-areas: "portada portada  " "nucleo nucleo " "nucleo nucleo " " final    final   ";
   }
   .portada .navbar {
-    align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 3.5em;
   }
   .portada .navbar li {
-    padding: 1.5em;
+    padding: 0.5em;
   }
   .portada .navbar li a {
     color: #2A2A24;
     text-decoration: overline;
     font-weight: 650;
+  }
+  .portada .navbar-brand {
+    padding-top: 0em;
+    height: 2em;
+  }
+  .portada .navbar-brand .logo {
+    height: 2.4em;
+    padding-top: 0em;
+  }
+  .portada .navbar ul {
+    flex-direction: column-reverse;
   }
   .portada .titulo h3 {
     padding: 0.8em;
@@ -458,16 +473,27 @@
     grid-template-areas: "portada " "nucleo " "nucleo " " final   ";
   }
   .portada .navbar {
-    align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 3.5em;
   }
   .portada .navbar li {
-    padding: 1.5em;
+    padding: 0.5em;
   }
   .portada .navbar li a {
     color: #2A2A24;
     text-decoration: overline;
     font-weight: 650;
+  }
+  .portada .navbar-brand {
+    padding-top: 0em;
+    height: 2em;
+  }
+  .portada .navbar-brand .logo {
+    height: 2.4em;
+    padding-top: 0em;
+  }
+  .portada .navbar ul {
+    flex-direction: column-reverse;
   }
   .portada .titulo h3 {
     padding: 0.5em;
@@ -529,27 +555,44 @@
     height: 1.5em;
   }
   .final .menu-final .link {
+    padding-left: 0em;
     margin-bottom: 0em;
   }
   .final .menu-final .link li {
     padding: 0.5em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
   }
   .final .menu-final .redes li {
     padding: 0.5em;
   }
+  .final .menu-final .redes .wrapper .icon {
+    margin: 0em;
+  }
 }
 @media (min-width: 769px) and (max-width: 991px) {
   .portada .navbar {
-    align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 3.5em;
   }
   .portada .navbar li {
-    padding: 1.5em;
+    padding: 0.5em;
   }
   .portada .navbar li a {
     color: #2A2A24;
     text-decoration: overline;
     font-weight: 650;
+  }
+  .portada .navbar-brand {
+    padding-top: 0em;
+    height: 2em;
+  }
+  .portada .navbar-brand .logo {
+    height: 2.4em;
+    padding-top: 0em;
+  }
+  .portada .navbar ul {
+    flex-direction: column-reverse;
   }
   .final .menu-final .link {
     margin-bottom: 0em;

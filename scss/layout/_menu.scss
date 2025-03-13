@@ -19,8 +19,6 @@
             }
         }
     }
-
-
     }
     ul {
         display: flex;
@@ -36,6 +34,10 @@
         a {
             color: map-get($color-bg , white-menu );
             text-decoration:overline;
+            font-weight: 650;
+        }
+        .name {
+            color: map-get($color-bg , musgo-menu );
             font-weight: 650;
         }
     }           
